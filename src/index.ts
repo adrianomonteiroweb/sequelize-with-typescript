@@ -7,7 +7,7 @@ app.listen(PORT, () => {
   const statusServer =
     process.env.DEVELOPMENT === "true"
       ? `Server running on http://${HOST}:${PORT}`
-      : process.env.DEPLOY_URL;
+      : `Server running on ${process.env.DEPLOY_URL}`;
 
   console.log(statusServer);
 });
